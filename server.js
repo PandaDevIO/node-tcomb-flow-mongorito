@@ -1,3 +1,5 @@
+import './services/validation';
+
 import bodyParser from 'body-parser';
 import config from './config/config';
 import cors from 'cors';

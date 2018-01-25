@@ -1,12 +1,10 @@
-import { Database, Model } from 'mongorito';
+import mongoose from 'mongoose';
 
 const MONGOLAB_URI = process.env.MONGO_URI;
-global.db = new Database(MONGOLAB_URI);
-db.connect();
+mongoose.connect(MONGOLAB_URI, { useMongoClient: true });
+
+global.Mongoose = mongoose;
 
 export default {
-  db: {
-    MONGOLAB_URI
-  },
   SECRET: process.env.SECRET,
 };

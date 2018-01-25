@@ -1,7 +1,7 @@
 {
-  "name": "node-tcomb-flow-mongorito",
+  "name": "awakn-api",
   "version": "1.0.0",
-  "description": "Starter API Node.js with static types",
+  "description": "api de l'appli awakn",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,11 +13,13 @@
   },
   "dependencies": {
     "apn": "^2.1.2",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.14.1",
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "jsonwebtoken": "^8.1.0",
     "knex": "^0.9.0",
+    "mongoose": "^4.13.9",
     "mongorito": "^3.0.4",
     "morgan": "^1.6.1",
     "mysql": "^2.9.0",

@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 class Token {
     generate(user) {
         const token = jwt.sign({ user }, config.SECRET);
-        return Promise.resolve(token);
+        return token;
     }
 
     isAuthorized(token) {
