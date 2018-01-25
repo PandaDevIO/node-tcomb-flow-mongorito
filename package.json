@@ -1,0 +1,42 @@
+{
+  "name": "awakn-api",
+  "version": "1.0.0",
+  "description": "api de l'appli awakn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "node ./build/bundle.js",
+    "dev": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack --watch",
+    "watch:server": "nodemon --inspect=\"5858\" \"./build/bundle.js\" --watch \"./build\" "
+  },
+  "dependencies": {
+    "apn": "^2.1.2",
+    "body-parser": "^1.14.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "jsonwebtoken": "^8.1.0",
+    "knex": "^0.9.0",
+    "mongorito": "^3.0.4",
+    "morgan": "^1.6.1",
+    "mysql": "^2.9.0",
+    "supervisor": "^0.12.0",
+    "tcomb": "^3.2.24",
+    "tcomb-validation": "^3.4.1",
+    "ws": "^1.1.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-tcomb": "^0.3.26",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.14.11",
+    "npm-run-all": "^4.1.2",
+    "webpack": "^3.10.0"
+  }
+}
