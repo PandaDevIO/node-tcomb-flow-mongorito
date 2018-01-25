@@ -1,7 +1,7 @@
 {
-  "name": "awakn-api",
+  "name": "node-tcomb-flow-mongorito",
   "version": "1.0.0",
-  "description": "api de l'appli awakn",
+  "description": "Starter API Node.js with static types",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
